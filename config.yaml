@@ -1,0 +1,61 @@
+dataset:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  sample_dir: "data/sample"
+  metadata_file: "data/processed/items_metadata.csv"
+  polyvore_repo_url: "https://github.com/xthan/polyvore-dataset"
+
+model:
+  type: "clip" # Options: 'clip', 'resnet50'
+  clip_model_name: "ViT-B-32"
+  clip_pretrained: "openai" # or 'laion2b_s34b_b79k'
+  embedding_dim: 512
+  device: "auto" # 'cuda' or 'cpu' or 'auto'
+  batch_size: 32
+
+embeddings:
+  save_dir: "embeddings"
+  vectors_file: "embeddings/item_embeddings.npy"
+  ids_file: "embeddings/item_ids.json"
+
+indexes:
+  save_dir: "indexes"
+  global_index_file: "indexes/faiss_global.index"
+  category_index_prefix: "indexes/faiss_cat_"
+
+compatibility_model:
+  save_path: "models/compatibility_mlp.pt"
+  epochs: 15
+  learning_rate: 0.001
+  hidden_dim: 256
+  dropout: 0.2
+
+scoring:
+  weights:
+    learned_compatibility: 0.6
+    style_similarity: 0.2
+    color_harmony: 0.2
+
+outfit_generation:
+  beam_width: 5
+  slots:
+    - "top"
+    - "bottom"
+    - "shoes"
+    - "outerwear"
+    - "accessory"
+
+categories:
+  mapped_categories:
+    - "top"
+    - "shirt"
+    - "dress"
+    - "jeans/pants"
+    - "skirt"
+    - "shoes"
+    - "jacket/outerwear"
+    - "bag"
+    - "accessories"
+
+database:
+  db_path: "favourites.db"

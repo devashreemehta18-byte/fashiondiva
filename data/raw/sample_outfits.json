@@ -1,0 +1,3002 @@
+[
+  {
+    "set_id": "outfit_0001",
+    "items": [
+      {
+        "item_id": "item_00001",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00002",
+        "index": 1,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00003",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00004",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00005",
+        "index": 4,
+        "category": "bag"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0002",
+    "items": [
+      {
+        "item_id": "item_00006",
+        "index": 0,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00007",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00008",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00009",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00010",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0003",
+    "items": [
+      {
+        "item_id": "item_00011",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00012",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00013",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00014",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00015",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0004",
+    "items": [
+      {
+        "item_id": "item_00016",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00017",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00018",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00019",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00020",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0005",
+    "items": [
+      {
+        "item_id": "item_00021",
+        "index": 0,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00022",
+        "index": 1,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00023",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00024",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00025",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0006",
+    "items": [
+      {
+        "item_id": "item_00026",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00027",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00028",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00029",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00030",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0007",
+    "items": [
+      {
+        "item_id": "item_00031",
+        "index": 0,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00032",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00033",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00034",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00035",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0008",
+    "items": [
+      {
+        "item_id": "item_00036",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00037",
+        "index": 1,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00038",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00039",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00040",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0009",
+    "items": [
+      {
+        "item_id": "item_00041",
+        "index": 0,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00042",
+        "index": 1,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00043",
+        "index": 2,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00044",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00045",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0010",
+    "items": [
+      {
+        "item_id": "item_00046",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00047",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00048",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00049",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00050",
+        "index": 4,
+        "category": "skirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0011",
+    "items": [
+      {
+        "item_id": "item_00051",
+        "index": 0,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00052",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00053",
+        "index": 2,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00054",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00055",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0012",
+    "items": [
+      {
+        "item_id": "item_00056",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00057",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00058",
+        "index": 2,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00059",
+        "index": 3,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00060",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0013",
+    "items": [
+      {
+        "item_id": "item_00061",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00062",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00063",
+        "index": 2,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00064",
+        "index": 3,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00065",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0014",
+    "items": [
+      {
+        "item_id": "item_00066",
+        "index": 0,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00067",
+        "index": 1,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00068",
+        "index": 2,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00069",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00070",
+        "index": 4,
+        "category": "skirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0015",
+    "items": [
+      {
+        "item_id": "item_00071",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00072",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00073",
+        "index": 2,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00074",
+        "index": 3,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00075",
+        "index": 4,
+        "category": "bag"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0016",
+    "items": [
+      {
+        "item_id": "item_00076",
+        "index": 0,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00077",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00078",
+        "index": 2,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00079",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00080",
+        "index": 4,
+        "category": "skirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0017",
+    "items": [
+      {
+        "item_id": "item_00081",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00082",
+        "index": 1,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00083",
+        "index": 2,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00084",
+        "index": 3,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00085",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0018",
+    "items": [
+      {
+        "item_id": "item_00086",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00087",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00088",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00089",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00090",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0019",
+    "items": [
+      {
+        "item_id": "item_00091",
+        "index": 0,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00092",
+        "index": 1,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00093",
+        "index": 2,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00094",
+        "index": 3,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00095",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0020",
+    "items": [
+      {
+        "item_id": "item_00096",
+        "index": 0,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00097",
+        "index": 1,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00098",
+        "index": 2,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00099",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00100",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0021",
+    "items": [
+      {
+        "item_id": "item_00101",
+        "index": 0,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00102",
+        "index": 1,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00103",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00104",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00105",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0022",
+    "items": [
+      {
+        "item_id": "item_00106",
+        "index": 0,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00107",
+        "index": 1,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00108",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00109",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00110",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0023",
+    "items": [
+      {
+        "item_id": "item_00111",
+        "index": 0,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00112",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00113",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00114",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00115",
+        "index": 4,
+        "category": "bag"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0024",
+    "items": [
+      {
+        "item_id": "item_00116",
+        "index": 0,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00117",
+        "index": 1,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00118",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00119",
+        "index": 3,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00120",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0025",
+    "items": [
+      {
+        "item_id": "item_00121",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00122",
+        "index": 1,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00123",
+        "index": 2,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00124",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00125",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0026",
+    "items": [
+      {
+        "item_id": "item_00126",
+        "index": 0,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00127",
+        "index": 1,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00128",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00129",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00130",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0027",
+    "items": [
+      {
+        "item_id": "item_00131",
+        "index": 0,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00132",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00133",
+        "index": 2,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00134",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00135",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0028",
+    "items": [
+      {
+        "item_id": "item_00136",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00137",
+        "index": 1,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00138",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00139",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00140",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0029",
+    "items": [
+      {
+        "item_id": "item_00141",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00142",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00143",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00144",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00145",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0030",
+    "items": [
+      {
+        "item_id": "item_00146",
+        "index": 0,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00147",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00148",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00149",
+        "index": 3,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00150",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0031",
+    "items": [
+      {
+        "item_id": "item_00151",
+        "index": 0,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00152",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00153",
+        "index": 2,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00154",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00155",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0032",
+    "items": [
+      {
+        "item_id": "item_00156",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00157",
+        "index": 1,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00158",
+        "index": 2,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00159",
+        "index": 3,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00160",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0033",
+    "items": [
+      {
+        "item_id": "item_00161",
+        "index": 0,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00162",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00163",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00164",
+        "index": 3,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00165",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0034",
+    "items": [
+      {
+        "item_id": "item_00166",
+        "index": 0,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00167",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00168",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00169",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00170",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0035",
+    "items": [
+      {
+        "item_id": "item_00171",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00172",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00173",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00174",
+        "index": 3,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00175",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0036",
+    "items": [
+      {
+        "item_id": "item_00176",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00177",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00178",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00179",
+        "index": 3,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00180",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0037",
+    "items": [
+      {
+        "item_id": "item_00181",
+        "index": 0,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00182",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00183",
+        "index": 2,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00184",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00185",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0038",
+    "items": [
+      {
+        "item_id": "item_00186",
+        "index": 0,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00187",
+        "index": 1,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00188",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00189",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00190",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0039",
+    "items": [
+      {
+        "item_id": "item_00191",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00192",
+        "index": 1,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00193",
+        "index": 2,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00194",
+        "index": 3,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00195",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0040",
+    "items": [
+      {
+        "item_id": "item_00196",
+        "index": 0,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00197",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00198",
+        "index": 2,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00199",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00200",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0041",
+    "items": [
+      {
+        "item_id": "item_00201",
+        "index": 0,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00202",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00203",
+        "index": 2,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00204",
+        "index": 3,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00205",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0042",
+    "items": [
+      {
+        "item_id": "item_00206",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00207",
+        "index": 1,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00208",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00209",
+        "index": 3,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00210",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0043",
+    "items": [
+      {
+        "item_id": "item_00211",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00212",
+        "index": 1,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00213",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00214",
+        "index": 3,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00215",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0044",
+    "items": [
+      {
+        "item_id": "item_00216",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00217",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00218",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00219",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00220",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0045",
+    "items": [
+      {
+        "item_id": "item_00221",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00222",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00223",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00224",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00225",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0046",
+    "items": [
+      {
+        "item_id": "item_00226",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00227",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00228",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00229",
+        "index": 3,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00230",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0047",
+    "items": [
+      {
+        "item_id": "item_00231",
+        "index": 0,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00232",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00233",
+        "index": 2,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00234",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00235",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0048",
+    "items": [
+      {
+        "item_id": "item_00236",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00237",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00238",
+        "index": 2,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00239",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00240",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0049",
+    "items": [
+      {
+        "item_id": "item_00241",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00242",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00243",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00244",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00245",
+        "index": 4,
+        "category": "skirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0050",
+    "items": [
+      {
+        "item_id": "item_00246",
+        "index": 0,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00247",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00248",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00249",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00250",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0051",
+    "items": [
+      {
+        "item_id": "item_00251",
+        "index": 0,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00252",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00253",
+        "index": 2,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00254",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00255",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0052",
+    "items": [
+      {
+        "item_id": "item_00256",
+        "index": 0,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00257",
+        "index": 1,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00258",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00259",
+        "index": 3,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00260",
+        "index": 4,
+        "category": "skirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0053",
+    "items": [
+      {
+        "item_id": "item_00261",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00262",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00263",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00264",
+        "index": 3,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00265",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0054",
+    "items": [
+      {
+        "item_id": "item_00266",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00267",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00268",
+        "index": 2,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00269",
+        "index": 3,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00270",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0055",
+    "items": [
+      {
+        "item_id": "item_00271",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00272",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00273",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00274",
+        "index": 3,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00275",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0056",
+    "items": [
+      {
+        "item_id": "item_00276",
+        "index": 0,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00277",
+        "index": 1,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00278",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00279",
+        "index": 3,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00280",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0057",
+    "items": [
+      {
+        "item_id": "item_00281",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00282",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00283",
+        "index": 2,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00284",
+        "index": 3,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00285",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0058",
+    "items": [
+      {
+        "item_id": "item_00286",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00287",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00288",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00289",
+        "index": 3,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00290",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0059",
+    "items": [
+      {
+        "item_id": "item_00291",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00292",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00293",
+        "index": 2,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00294",
+        "index": 3,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00295",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0060",
+    "items": [
+      {
+        "item_id": "item_00296",
+        "index": 0,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00297",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00298",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00299",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00300",
+        "index": 4,
+        "category": "skirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0061",
+    "items": [
+      {
+        "item_id": "item_00301",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00302",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00303",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00304",
+        "index": 3,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00305",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0062",
+    "items": [
+      {
+        "item_id": "item_00306",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00307",
+        "index": 1,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00308",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00309",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00310",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0063",
+    "items": [
+      {
+        "item_id": "item_00311",
+        "index": 0,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00312",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00313",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00314",
+        "index": 3,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00315",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0064",
+    "items": [
+      {
+        "item_id": "item_00316",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00317",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00318",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00319",
+        "index": 3,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00320",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0065",
+    "items": [
+      {
+        "item_id": "item_00321",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00322",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00323",
+        "index": 2,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00324",
+        "index": 3,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00325",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0066",
+    "items": [
+      {
+        "item_id": "item_00326",
+        "index": 0,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00327",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00328",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00329",
+        "index": 3,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00330",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0067",
+    "items": [
+      {
+        "item_id": "item_00331",
+        "index": 0,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00332",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00333",
+        "index": 2,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00334",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00335",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0068",
+    "items": [
+      {
+        "item_id": "item_00336",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00337",
+        "index": 1,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00338",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00339",
+        "index": 3,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00340",
+        "index": 4,
+        "category": "skirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0069",
+    "items": [
+      {
+        "item_id": "item_00341",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00342",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00343",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00344",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00345",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0070",
+    "items": [
+      {
+        "item_id": "item_00346",
+        "index": 0,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00347",
+        "index": 1,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00348",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00349",
+        "index": 3,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00350",
+        "index": 4,
+        "category": "bag"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0071",
+    "items": [
+      {
+        "item_id": "item_00351",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00352",
+        "index": 1,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00353",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00354",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00355",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0072",
+    "items": [
+      {
+        "item_id": "item_00356",
+        "index": 0,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00357",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00358",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00359",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00360",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0073",
+    "items": [
+      {
+        "item_id": "item_00361",
+        "index": 0,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00362",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00363",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00364",
+        "index": 3,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00365",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0074",
+    "items": [
+      {
+        "item_id": "item_00366",
+        "index": 0,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00367",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00368",
+        "index": 2,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00369",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00370",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0075",
+    "items": [
+      {
+        "item_id": "item_00371",
+        "index": 0,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00372",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00373",
+        "index": 2,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00374",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00375",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0076",
+    "items": [
+      {
+        "item_id": "item_00376",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00377",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00378",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00379",
+        "index": 3,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00380",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0077",
+    "items": [
+      {
+        "item_id": "item_00381",
+        "index": 0,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00382",
+        "index": 1,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00383",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00384",
+        "index": 3,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00385",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0078",
+    "items": [
+      {
+        "item_id": "item_00386",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00387",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00388",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00389",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00390",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0079",
+    "items": [
+      {
+        "item_id": "item_00391",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00392",
+        "index": 1,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00393",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00394",
+        "index": 3,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00395",
+        "index": 4,
+        "category": "bag"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0080",
+    "items": [
+      {
+        "item_id": "item_00396",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00397",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00398",
+        "index": 2,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00399",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00400",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0081",
+    "items": [
+      {
+        "item_id": "item_00401",
+        "index": 0,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00402",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00403",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00404",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00405",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0082",
+    "items": [
+      {
+        "item_id": "item_00406",
+        "index": 0,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00407",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00408",
+        "index": 2,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00409",
+        "index": 3,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00410",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0083",
+    "items": [
+      {
+        "item_id": "item_00411",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00412",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00413",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00414",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00415",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0084",
+    "items": [
+      {
+        "item_id": "item_00416",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00417",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00418",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00419",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00420",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0085",
+    "items": [
+      {
+        "item_id": "item_00421",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00422",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00423",
+        "index": 2,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00424",
+        "index": 3,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00425",
+        "index": 4,
+        "category": "skirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0086",
+    "items": [
+      {
+        "item_id": "item_00426",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00427",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00428",
+        "index": 2,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00429",
+        "index": 3,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00430",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0087",
+    "items": [
+      {
+        "item_id": "item_00431",
+        "index": 0,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00432",
+        "index": 1,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00433",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00434",
+        "index": 3,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00435",
+        "index": 4,
+        "category": "jeans/pants"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0088",
+    "items": [
+      {
+        "item_id": "item_00436",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00437",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00438",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00439",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00440",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0089",
+    "items": [
+      {
+        "item_id": "item_00441",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00442",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00443",
+        "index": 2,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00444",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00445",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0090",
+    "items": [
+      {
+        "item_id": "item_00446",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00447",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00448",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00449",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00450",
+        "index": 4,
+        "category": "shoes"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0091",
+    "items": [
+      {
+        "item_id": "item_00451",
+        "index": 0,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00452",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00453",
+        "index": 2,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00454",
+        "index": 3,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00455",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0092",
+    "items": [
+      {
+        "item_id": "item_00456",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00457",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00458",
+        "index": 2,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00459",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00460",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0093",
+    "items": [
+      {
+        "item_id": "item_00461",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00462",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00463",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00464",
+        "index": 3,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00465",
+        "index": 4,
+        "category": "shirt"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0094",
+    "items": [
+      {
+        "item_id": "item_00466",
+        "index": 0,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00467",
+        "index": 1,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00468",
+        "index": 2,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00469",
+        "index": 3,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00470",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0095",
+    "items": [
+      {
+        "item_id": "item_00471",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00472",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00473",
+        "index": 2,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00474",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00475",
+        "index": 4,
+        "category": "bag"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0096",
+    "items": [
+      {
+        "item_id": "item_00476",
+        "index": 0,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00477",
+        "index": 1,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00478",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00479",
+        "index": 3,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00480",
+        "index": 4,
+        "category": "jacket/outerwear"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0097",
+    "items": [
+      {
+        "item_id": "item_00481",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00482",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00483",
+        "index": 2,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00484",
+        "index": 3,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00485",
+        "index": 4,
+        "category": "top"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0098",
+    "items": [
+      {
+        "item_id": "item_00486",
+        "index": 0,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00487",
+        "index": 1,
+        "category": "bag"
+      },
+      {
+        "item_id": "item_00488",
+        "index": 2,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00489",
+        "index": 3,
+        "category": "dress"
+      },
+      {
+        "item_id": "item_00490",
+        "index": 4,
+        "category": "accessories"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0099",
+    "items": [
+      {
+        "item_id": "item_00491",
+        "index": 0,
+        "category": "jacket/outerwear"
+      },
+      {
+        "item_id": "item_00492",
+        "index": 1,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00493",
+        "index": 2,
+        "category": "skirt"
+      },
+      {
+        "item_id": "item_00494",
+        "index": 3,
+        "category": "accessories"
+      },
+      {
+        "item_id": "item_00495",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  },
+  {
+    "set_id": "outfit_0100",
+    "items": [
+      {
+        "item_id": "item_00496",
+        "index": 0,
+        "category": "top"
+      },
+      {
+        "item_id": "item_00497",
+        "index": 1,
+        "category": "shoes"
+      },
+      {
+        "item_id": "item_00498",
+        "index": 2,
+        "category": "shirt"
+      },
+      {
+        "item_id": "item_00499",
+        "index": 3,
+        "category": "jeans/pants"
+      },
+      {
+        "item_id": "item_00500",
+        "index": 4,
+        "category": "dress"
+      }
+    ]
+  }
+]

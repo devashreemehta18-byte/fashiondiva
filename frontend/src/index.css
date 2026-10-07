@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Italiana&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --boutique-black: #0B0B0C;
+  --boutique-header: #000000;
+  --boutique-cream: #F7F4EE;
+  --boutique-sand: #EDE7DC;
+  --boutique-warm-card: #FAF8F5;
+  --boutique-mocha: #5A3D28;
+  --boutique-terracotta: #A66B49;
+  --boutique-tan: #8C5B39;
+  --boutique-gold: #C5A880;
+  --boutique-gold-light: #E8D8C3;
+  --boutique-sale: #D97706;
+  
+  --bg-dark-surface: #141722;
+  --bg-dark-card: rgba(22, 28, 42, 0.9);
+  
+  --text-primary: #1F1E1D;
+  --text-secondary: #6B655F;
+  --text-light: #F8FAFC;
+  --text-light-muted: #94A3B8;
+
+  --font-logo: 'Cinzel', serif;
+  --font-hero: 'Cinzel', 'Playfair Display', serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  --transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  --shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-boutique: 0 20px 50px rgba(0, 0, 0, 0.12);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--boutique-cream);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Boutique Luxury Typography */
+.font-logo {
+  font-family: var(--font-logo);
+  letter-spacing: 0.18em;
+}
+
+.font-hero {
+  font-family: var(--font-hero);
+  letter-spacing: -0.01em;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Top Boutique Navigation Header */
+.boutique-nav {
+  background-color: var(--boutique-header);
+  color: #FFFFFF;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.boutique-nav-link {
+  color: #E2E8F0;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: var(--transition);
+  position: relative;
+  background: transparent;
+  border: none;
+}
+
+.boutique-nav-link:hover,
+.boutique-nav-link.active {
+  color: #FFFFFF;
+}
+
+.boutique-nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 12px;
+  right: 12px;
+  height: 2px;
+  background-color: var(--boutique-gold);
+}
+
+.boutique-sale-link {
+  color: #E07A5F !important;
+}
+
+/* Hero Section */
+.hero-container {
+  background-color: var(--boutique-cream);
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-tag {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--boutique-terracotta);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.hero-headline {
+  font-family: var(--font-hero);
+  font-size: 4.8rem;
+  font-weight: 800;
+  line-height: 0.95;
+  color: #1A1715;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.hero-headline .accent-word {
+  color: var(--boutique-mocha);
+}
+
+.hero-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #4A453F;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-boutique-black {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: none;
+  padding: 16px 36px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: var(--transition);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.btn-boutique-black:hover {
+  background-color: var(--boutique-mocha);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn-boutique-outline {
+  background: transparent;
+  color: #000000;
+  border: 1.5px solid #000000;
+  padding: 14px 30px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: var(--transition);
+}
+
+.btn-boutique-outline:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+/* Trust Bar */
+.trust-bar {
+  display: grid;
+  grid-templateColumns: repeat(3, 1fr);
+  gap: 32px;
+  padding-top: 36px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 48px;
+}
+
+.trust-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.trust-title {
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #1A1715;
+  margin-bottom: 2px;
+}
+
+.trust-desc {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+/* Boutique Cards & Panels */
+.boutique-card {
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: var(--shadow-subtle);
+  transition: var(--transition);
+  overflow: hidden;
+}
+
+.boutique-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-boutique);
+  border-color: var(--boutique-gold);
+}
+
+.boutique-pill {
+  padding: 6px 14px;
+  border-radius: 9999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero-headline {
+    font-size: 3.4rem;
+  }
+  .trust-bar {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

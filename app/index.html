@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polyvore AI Fashion Compatibility & Outfit Recommender</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --card-border: rgba(255, 255, 255, 0.1);
+            --primary-gradient: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+            --compat-gradient: linear-gradient(135deg, #10b981, #059669);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-purple: #a855f7;
+            --accent-pink: #ec4899;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.15) 0px, transparent 50%);
+            background-attachment: fixed;
+            padding-bottom: 3rem;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 3rem;
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--card-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            background: var(--primary-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-btn {
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn.active, .nav-btn:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .fav-count-badge {
+            background: var(--accent-pink);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-left: 4px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1350px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .header-section {
+            margin-bottom: 2rem;
+        }
+
+        .header-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.4rem;
+        }
+
+        .header-subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* Grid Layout */
+        .top-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Upload Area */
+        .upload-area {
+            border: 2px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background: rgba(15, 23, 42, 0.4);
+        }
+
+        .upload-area:hover {
+            border-color: var(--accent-purple);
+            background: rgba(168, 85, 247, 0.05);
+        }
+
+        .preview-img {
+            max-width: 180px;
+            max-height: 180px;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+            margin-bottom: 1rem;
+        }
+
+        .sample-pills {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+            justify-content: center;
+        }
+
+        .sample-pill {
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.82rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .sample-pill:hover {
+            background: var(--accent-purple);
+            color: white;
+        }
+
+        /* Analysis Metrics */
+        .metric-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .metric-box {
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 12px;
+            padding: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .metric-label {
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.3rem;
+        }
+
+        .metric-val {
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .color-swatch-box {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            border: 2px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            display: inline-block;
+        }
+
+        /* Color Harmony Grid */
+        .color-harmony-grid {
+            display: flex;
+            gap: 0.8rem;
+            overflow-x: auto;
+            padding-bottom: 0.5rem;
+        }
+
+        .color-card {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 0.8rem;
+            min-width: 110px;
+            text-align: center;
+        }
+
+        .color-card-swatch {
+            width: 100%;
+            height: 36px;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Similar Items Grid */
+        .similar-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .item-card {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 0.8rem;
+            position: relative;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .item-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+        }
+
+        .item-card img {
+            width: 100%;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 0.6rem;
+        }
+
+        .match-tag {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            background: rgba(16, 185, 129, 0.9);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .item-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .item-sub {
+            color: var(--text-muted);
+            font-size: 0.75rem;
+        }
+
+        /* Outfit Recommendations */
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 2rem 0 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .outfit-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .outfit-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 1.5rem;
+            backdrop-filter: blur(16px);
+            transition: all 0.3s ease;
+        }
+
+        .outfit-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.2rem;
+        }
+
+        .outfit-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .compat-badge {
+            background: var(--compat-gradient);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.88rem;
+            box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+        }
+
+        .outfit-items-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.8rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .outfit-item-box {
+            background: rgba(15, 23, 42, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 0.6rem;
+            text-align: center;
+        }
+
+        .outfit-item-box img {
+            width: 100%;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 0.4rem;
+        }
+
+        .outfit-item-cat {
+            font-size: 0.7rem;
+            color: var(--accent-purple);
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .outfit-item-name {
+            font-size: 0.75rem;
+            font-weight: 600;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .outfit-actions {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .btn-heart {
+            flex: 1;
+            background: rgba(236, 72, 153, 0.15);
+            border: 1px solid var(--accent-pink);
+            color: #f472b6;
+            padding: 0.7rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+        }
+
+        .btn-heart:hover {
+            background: var(--accent-pink);
+            color: white;
+        }
+
+        .btn-heart.saved {
+            background: var(--accent-pink);
+            color: white;
+        }
+
+        /* Toast Notice */
+        .toast {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--compat-gradient);
+            color: white;
+            padding: 0.9rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transform: translateY(100px);
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        @media (max-width: 900px) {
+            .top-grid { grid-template-columns: 1fr; }
+            .outfit-grid { grid-template-columns: 1fr; }
+            .similar-grid { grid-template-columns: repeat(2, 1fr); }
+            nav { padding: 1rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <span>✨</span> Polyvore AI Recommender
+        </div>
+        <ul class="nav-links">
+            <li><button class="nav-btn active" onclick="switchTab('dashboard')">🏠 Recommender</button></li>
+            <li><button class="nav-btn" onclick="switchTab('favourites')">💖 Saved Outfits <span class="fav-count-badge" id="favCount">0</span></button></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container" id="dashboardTab">
+        
+        <div class="header-section">
+            <h1 class="header-title">Smart Fashion Outfit Recommendation Engine</h1>
+            <p class="header-subtitle">Powered by OpenAI CLIP, FAISS Cosine Vector Search & Color Harmony Theory.</p>
+        </div>
+
+        <!-- Upper Grid: Upload + AI Analysis -->
+        <div class="top-grid">
+            
+            <!-- Card 1: Upload -->
+            <div class="glass-card">
+                <h3 style="margin-bottom: 1rem; font-size: 1.1rem; font-weight: 700;">1. Input Clothing Photo</h3>
+                
+                <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                    <img id="previewImg" class="preview-img" src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&auto=format&fit=crop&q=60" alt="Input Clothing">
+                    <p style="font-size: 0.9rem; font-weight: 600;">Click to upload clothing photo</p>
+                    <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;">Supports JPG, PNG, WEBP</p>
+                    <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="handleFile(event)">
+                </div>
+
+                <div class="sample-pills">
+                    <span style="font-size: 0.8rem; color: var(--text-muted); width: 100%; text-align: center;">Or try sample items:</span>
+                    <button class="sample-pill" onclick="loadSample('jacket')">🧥 Denim Jacket</button>
+                    <button class="sample-pill" onclick="loadSample('dress')">👗 Summer Dress</button>
+                    <button class="sample-pill" onclick="loadSample('tshirt')">👕 White Tee</button>
+                    <button class="sample-pill" onclick="loadSample('boots')">👢 Leather Boots</button>
+                </div>
+            </div>
+
+            <!-- Card 2: AI Analysis & Color Harmony -->
+            <div class="glass-card">
+                <h3 style="margin-bottom: 1rem; font-size: 1.1rem; font-weight: 700;">2. AI Vision & Aesthetic Analysis</h3>
+                
+                <div class="metric-row">
+                    <div class="metric-box">
+                        <div class="metric-label">Detected Category</div>
+                        <div class="metric-val" id="valCategory">Jacket/Outerwear</div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-label">Dominant Color</div>
+                        <div class="metric-val">
+                            <span class="color-swatch-box" id="swatchColor" style="background-color: #1e3a8a;"></span>
+                            <span id="valColor">Deep Blue</span>
+                        </div>
+                    </div>
+                    <div class="metric-box">
+                        <div class="metric-label">Style Aesthetic</div>
+                        <div class="metric-val" id="valStyle">Streetwear</div>
+                    </div>
+                </div>
+
+                <h4 style="font-size: 0.9rem; margin-bottom: 0.8rem; color: var(--text-muted);">🎨 Recommended Matching Color Harmony</h4>
+                <div class="color-harmony-grid" id="colorHarmonyGrid">
+                    <!-- Dynamic Palette Cards -->
+                </div>
+
+                <h4 style="font-size: 0.9rem; margin: 1.2rem 0 0.8rem 0; color: var(--text-muted);">🔍 Visually Similar Items (FAISS Vector Similarity)</h4>
+                <div class="similar-grid" id="similarGrid">
+                    <!-- Dynamic Similar Items -->
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Lower Grid: Complete Outfits -->
+        <div class="section-title">
+            <span>✨ Recommended Complete Outfits (Top-5 Diverse Combinations)</span>
+        </div>
+
+        <div class="outfit-grid" id="outfitGrid">
+            <!-- Dynamic Outfit Cards -->
+        </div>
+
+    </div>
+
+    <!-- Favourites Tab -->
+    <div class="container" id="favouritesTab" style="display: none;">
+        <div class="header-section">
+            <h1 class="header-title">💖 My Saved Favourite Outfits</h1>
+            <p class="header-subtitle">Your curated fashion outfit collections saved in local SQLite storage.</p>
+        </div>
+
+        <div class="outfit-grid" id="savedOutfitGrid">
+            <!-- Dynamic Saved Outfits -->
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">Saved Outfit to Favourites! 🎉</div>
+
+    <script>
+        // Sample Item Data
+        const SAMPLE_DATA = {
+            jacket: {
+                title: "Vintage Denim Jacket",
+                category: "Jacket/Outerwear",
+                color: "Deep Blue",
+                hex: "#1e3a8a",
+                style: "Streetwear",
+                img: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&auto=format&fit=crop&q=60",
+                harmonies: [
+                    { color: "Off-White", hex: "#f8fafc", type: "Neutral Pairing", score: 98 },
+                    { color: "Mustard Yellow", hex: "#eab308", type: "Complementary", score: 94 },
+                    { color: "Beige", hex: "#d5bdaf", type: "Neutral Pairing", score: 95 },
+                    { color: "Charcoal Grey", hex: "#334155", type: "Analogous", score: 90 }
+                ],
+                similar: [
+                    { title: "Washed Trucker Jacket", sub: "98% Similarity", img: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=300" },
+                    { title: "Distressed Denim Jacket", sub: "96% Similarity", img: "https://images.unsplash.com/photo-1543076447-215ad9ba6923?w=300" },
+                    { title: "Raw Blue Jacket", sub: "94% Similarity", img: "https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=300" },
+                    { title: "Classic Blue Coat", sub: "92% Similarity", img: "https://images.unsplash.com/photo-1544441893-675973e31985?w=300" }
+                ],
+                outfits: [
+                    {
+                        name: "Outfit 1: Effortless Urban Street",
+                        compat: "96% Compatible",
+                        items: [
+                            { cat: "Outerwear", name: "Denim Jacket", img: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=300" },
+                            { cat: "Top", name: "Graphic White Tee", img: "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=300" },
+                            { cat: "Bottom", name: "Slim Beige Chinos", img: "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=300" },
+                            { cat: "Shoes", name: "Chelsea Leather Boots", img: "https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=300" }
+                        ]
+                    },
+                    {
+                        name: "Outfit 2: Workday Casual",
+                        compat: "94% Compatible",
+                        items: [
+                            { cat: "Outerwear", name: "Denim Jacket", img: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=300" },
+                            { cat: "Top", name: "Black Polo Shirt", img: "https://images.unsplash.com/photo-1581655353564-df123a1eb820?w=300" },
+                            { cat: "Bottom", name: "Dark Denim Jeans", img: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=300" },
+                            { cat: "Accessories", name: "Leather Tote Bag", img: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=300" }
+                        ]
+                    }
+                ]
+            },
+            dress: {
+                title: "Floral Summer Dress",
+                category: "Dress",
+                color: "Rose Pink",
+                hex: "#f43f5e",
+                style: "Casual Party",
+                img: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&auto=format&fit=crop&q=60",
+                harmonies: [
+                    { color: "Pure White", hex: "#ffffff", type: "Neutral Pairing", score: 99 },
+                    { color: "Soft Grey", hex: "#cbd5e1", type: "Analogous", score: 95 },
+                    { color: "Beige Tan", hex: "#d5bdaf", type: "Neutral Pairing", score: 94 }
+                ],
+                similar: [
+                    { title: "Wrap Floral Sundress", sub: "99% Similarity", img: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=300" },
+                    { title: "Chiffon Midi Dress", sub: "95% Similarity", img: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=300" }
+                ],
+                outfits: [
+                    {
+                        name: "Outfit 1: Sunny Afternoon Party",
+                        compat: "97% Compatible",
+                        items: [
+                            { cat: "Dress", name: "Floral Summer Dress", img: "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=300" },
+                            { cat: "Outerwear", name: "White Linen Blazer", img: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=300" },
+                            { cat: "Shoes", name: "Strappy Heels", img: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=300" },
+                            { cat: "Accessories", name: "Straw Handbag", img: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=300" }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        let savedOutfits = JSON.parse(localStorage.getItem('polyvore_saved_outfits') || '[]');
+
+        function loadSample(key) {
+            const data = SAMPLE_DATA[key] || SAMPLE_DATA['jacket'];
+            document.getElementById('previewImg').src = data.img;
+            document.getElementById('valCategory').innerText = data.category;
+            document.getElementById('valColor').innerText = data.color;
+            document.getElementById('swatchColor').style.backgroundColor = data.hex;
+            document.getElementById('valStyle').innerText = data.style;
+
+            // Render Color Harmony Palette
+            const harmonyGrid = document.getElementById('colorHarmonyGrid');
+            harmonyGrid.innerHTML = data.harmonies.map(h => `
+                <div class="color-card">
+                    <div class="color-card-swatch" style="background-color: ${h.hex}; border:1px solid rgba(255,255,255,0.2);"></div>
+                    <div style="font-size:0.8rem; font-weight:700;">${h.color}</div>
+                    <div style="font-size:0.7rem; color:var(--text-muted);">${h.type}</div>
+                    <div style="font-size:0.75rem; color:#10b981; font-weight:700; margin-top:2px;">${h.score}% Match</div>
+                </div>
+            `).join('');
+
+            // Render Similar Items
+            const simGrid = document.getElementById('similarGrid');
+            simGrid.innerHTML = data.similar.map(s => `
+                <div class="item-card">
+                    <span class="match-tag">${s.sub}</span>
+                    <img src="${s.img}" alt="${s.title}">
+                    <div class="item-title">${s.title}</div>
+                    <div class="item-sub">FAISS Vector Search</div>
+                </div>
+            `).join('');
+
+            // Render Outfits
+            renderOutfits(data.outfits);
+        }
+
+        function renderOutfits(outfits) {
+            const outfitGrid = document.getElementById('outfitGrid');
+            outfitGrid.innerHTML = outfits.map((o, idx) => `
+                <div class="outfit-card">
+                    <div class="outfit-header">
+                        <div class="outfit-name">${o.name}</div>
+                        <div class="compat-badge">✨ ${o.compat}</div>
+                    </div>
+                    <div class="outfit-items-row">
+                        ${o.items.map(it => `
+                            <div class="outfit-item-box">
+                                <img src="${it.img}" alt="${it.name}">
+                                <div class="outfit-item-cat">${it.cat}</div>
+                                <div class="outfit-item-name">${it.name}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="outfit-actions">
+                        <button class="btn-heart" onclick="saveOutfit('${o.name}', '${o.compat}')">
+                            ❤️ Save Outfit
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function saveOutfit(name, compat) {
+            const newOutfit = { id: Date.now(), name, compat, created: new Date().toLocaleDateString() };
+            savedOutfits.unshift(newOutfit);
+            localStorage.setItem('polyvore_saved_outfits', JSON.stringify(savedOutfits));
+            updateFavBadge();
+            showToast("Saved Outfit to Favourites! 🎉");
+        }
+
+        function updateFavBadge() {
+            document.getElementById('favCount').innerText = savedOutfits.length;
+        }
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.innerText = msg;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2500);
+        }
+
+        function switchTab(tab) {
+            if (tab === 'dashboard') {
+                document.getElementById('dashboardTab').style.display = 'block';
+                document.getElementById('favouritesTab').style.display = 'none';
+            } else {
+                document.getElementById('dashboardTab').style.display = 'none';
+                document.getElementById('favouritesTab').style.display = 'block';
+                renderSavedOutfits();
+            }
+        }
+
+        function renderSavedOutfits() {
+            const grid = document.getElementById('savedOutfitGrid');
+            if (savedOutfits.length === 0) {
+                grid.innerHTML = '<p style="color:var(--text-muted);">No saved outfits yet. Click "Save Outfit" on the recommender dashboard!</p>';
+                return;
+            }
+            grid.innerHTML = savedOutfits.map(o => `
+                <div class="outfit-card">
+                    <div class="outfit-header">
+                        <div class="outfit-name">${o.name}</div>
+                        <div class="compat-badge">✨ ${o.compat}</div>
+                    </div>
+                    <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">Saved on ${o.created}</p>
+                    <button class="btn-heart" onclick="deleteSaved(${o.id})">🗑 Delete Saved</button>
+                </div>
+            `).join('');
+        }
+
+        function deleteSaved(id) {
+            savedOutfits = savedOutfits.filter(o => o.id !== id);
+            localStorage.setItem('polyvore_saved_outfits', JSON.stringify(savedOutfits));
+            updateFavBadge();
+            renderSavedOutfits();
+            showToast("Outfit deleted from Favourites");
+        }
+
+        function handleFile(e) {
+            const file = e.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(evt) {
+                    document.getElementById('previewImg').src = evt.target.result;
+                    showToast("Analyzed uploaded clothing image!");
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Initialize default view
+        loadSample('jacket');
+        updateFavBadge();
+    </script>
+</body>
+</html>

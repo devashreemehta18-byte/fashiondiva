@@ -1,0 +1,17 @@
+torch
+torchvision
+transformers
+open_clip_torch
+faiss-cpu
+scikit-learn
+pandas
+numpy
+pillow
+opencv-python
+fastapi
+uvicorn
+python-multipart
+streamlit
+pyyaml
+pytest
+requests
