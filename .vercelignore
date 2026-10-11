@@ -1,0 +1,13 @@
+# Python backend and heavy ML dependencies (PyTorch, FAISS, CUDA)
+# Leading slashes ensure root-level matching without ignoring frontend/src
+/api/
+/app/
+/src/
+/data/
+/embeddings/
+/indexes/
+/models/
+/tests/
+/requirements.txt
+/config.yaml
+/evaluate.py
