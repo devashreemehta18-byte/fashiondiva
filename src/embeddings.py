@@ -1,11 +1,15 @@
 import os
 import json
+# pyrefly: ignore [missing-import]
 import torch
+# pyrefly: ignore [missing-import]
 import numpy as np
 import pandas as pd
+# pyrefly: ignore [missing-import]
 from PIL import Image
 from pathlib import Path
 from typing import List, Union, Tuple
+# pyrefly: ignore [missing-import]
 from torchvision import transforms
 
 from src.config import load_config
@@ -33,6 +37,7 @@ class FeatureExtractor:
 
     def _init_clip(self, model_name: str):
         try:
+            # pyrefly: ignore [missing-import]
             import open_clip
             # try loading open_clip
             self.model, _, self.preprocess = open_clip.create_model_and_transforms(
@@ -44,6 +49,7 @@ class FeatureExtractor:
             self.backend = "open_clip"
         except Exception as e:
             print(f"OpenCLIP initialization note: {e}. Falling back to HuggingFace Transformers CLIP...")
+            # pyrefly: ignore [missing-import]
             from transformers import CLIPModel, CLIPProcessor, CLIPTokenizer
             clip_hf_id = "openai/clip-vit-base-patch32"
             self.model = CLIPModel.from_pretrained(clip_hf_id).to(self.device).eval()
@@ -54,6 +60,7 @@ class FeatureExtractor:
             self.backend = "hf_transformers"
 
     def _init_resnet50(self):
+        # pyrefly: ignore [missing-import]
         from torchvision.models import resnet50, ResNet50_Weights
         weights = ResNet50_Weights.DEFAULT
         full_resnet = resnet50(weights=weights)

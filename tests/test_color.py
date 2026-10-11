@@ -1,4 +1,6 @@
+# pyrefly: ignore [missing-import]
 import numpy as np
+# pyrefly: ignore [missing-import]
 import pytest
 from src.color import detect_dominant_color, map_hsv_to_color_name
 from src.color_theory import get_color_harmony_score, recommend_matching_colors, compute_blended_compatibility_score

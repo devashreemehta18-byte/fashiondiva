@@ -2,8 +2,10 @@ import os
 import json
 import random
 import pandas as pd
+# pyrefly: ignore [missing-import]
 import numpy as np
 from pathlib import Path
+# pyrefly: ignore [missing-import]
 from PIL import Image, ImageDraw
 from src.config import load_config
 

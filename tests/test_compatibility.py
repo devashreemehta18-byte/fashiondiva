@@ -1,5 +1,8 @@
+# pyrefly: ignore [missing-import]
 import torch
+# pyrefly: ignore [missing-import]
 import numpy as np
+# pyrefly: ignore [missing-import]
 import pytest
 from src.compatibility import CompatibilityMLP, CompatibilityPredictor
 

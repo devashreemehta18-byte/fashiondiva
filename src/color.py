@@ -1,5 +1,10 @@
+# pyrefly: ignore [missing-import]
+from pathlib import Path
+# pyrefly: ignore [missing-import]
 import cv2
+# pyrefly: ignore [missing-import]
 import numpy as np
+# pyrefly: ignore [missing-import]
 from PIL import Image
 from typing import Tuple, Dict, List, Union
 from sklearn.cluster import KMeans

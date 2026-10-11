@@ -1,3 +1,4 @@
+# pyrefly: ignore [missing-import]
 import pytest
 from src.data_prep import map_fine_category_to_broad
 
